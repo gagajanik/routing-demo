@@ -27,4 +27,8 @@ public departmentId;
     let nextId = this.departmentId + 1;
     this.router.navigate(['/departments', nextId]);
   }
+  goToDepartments() {
+    let selectedId = this.departmentId ? this.departmentId : null;
+    this.router.navigate(['/departments', {id: selectedId}]);
+  }
 }
