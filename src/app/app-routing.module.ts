@@ -5,7 +5,7 @@ import { EmplyoeListComponent } from './emplyoe-list/emplyoe-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  {path: '', component:DepartmentsListComponent},
+  {path: '', redirectTo:'/departments', pathMatch: 'prefix'},
   {path: 'departments', component:DepartmentsListComponent},
   {path: 'employees', component: EmplyoeListComponent},
   {path: "**", component: PageNotFoundComponent}
